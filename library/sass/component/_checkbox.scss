@@ -1,0 +1,91 @@
+.checkbox {
+    display: none;
+}
+
+.checkbox__label {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: $color-3;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease transform, 0.2s ease background-color;
+    overflow: hidden;
+    z-index: 1;
+    border: 2px solid rgba(0, 0, 0, 0.44);
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        width: 14px;
+        height: 14px;
+        margin: 0 auto;
+        background-color: #fff;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        transition: 0.2s ease width, 0.2s ease height;
+        border: 1px solid black;
+    }
+    &:hover::before {
+        width: 11px;
+        height: 11px;
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+.tick_mark {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    margin: 0 auto;
+    margin-left: 2.8px;
+    transform: translate(-5px, -5px) rotateZ(-40deg);
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        border-radius: 2px;
+        opacity: 0;
+        transition: 0.2s ease transform, 0.2s ease opacity;
+    }
+    &::before {
+        left: 0;
+        bottom: 0;
+        width: 2px;
+        height: 6px;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.23);
+        transform: translateY(-13.6px);
+    }
+    &::after {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.23);
+        transform: translateX(15.6px);
+    }
+}
+
+.checkbox:checked+.checkbox__label {
+    background-color: $color-2;
+}
+
+.checkbox:checked+.checkbox__label:before {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.checkbox:checked+.checkbox__label .tick_mark:before,
+.checkbox:checked+.checkbox__label .tick_mark:after {
+    transform: translate(0);
+    opacity: 1;
+}

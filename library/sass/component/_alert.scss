@@ -1,0 +1,27 @@
+.alert {
+    padding: .3rem 1rem;
+    display: flex;
+    background-color: $color-3;
+    display: inline;
+    border-radius: 10px;
+    color: $color-text;
+    &__p {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    &__times {
+        font-size: 15px;
+        margin-left: 3px;
+        cursor: pointer;
+        &--1 {
+            display: none;
+        }
+    }
+    &__holder {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+    }
+}

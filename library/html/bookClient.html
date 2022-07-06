@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آی بوک</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- logo -->
+        <nav>
+            <a href="client.html" class="header__logo"><span class="welcome__logo--1"> آی</span><span class="welcome__logo--2">&nbsp;بوک </span></a>
+        </nav>
+        <!-- menu -->
+        <ul class="header__menu">
+            <ul class="header__menu">
+                <li class="header__menu__item">
+                    <a href="favClient.html" class="header__menu__link">
+                        <span class="header__menu__link__design" data-menu="لیست علاقه مندی">لیست علاقه مندی</span>
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="client.html" class="header__menu__link">
+                        <span class="header__menu__link__design" data-menu="کتاب خانه">کتاب خانه</span>
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="borrowClient.html" class="header__menu__link">
+                        <span class="header__menu__link__design" data-menu="امانات">امانات</span>
+                    </a>
+                </li>
+            </ul>
+        </ul>
+        <div class="header__button">
+            <a href="singIn.html" class="header__logOut btn">خروج</a>
+        </div>
+    </header>
+
+    <div class="book-holder">
+        <div class="book-holder__imager">
+            <img src="../img/1.jpg" alt="" class="book-holder__img">
+            <img src="../img/2.jpg" alt="" class="book-holder__img">
+            <img src="../img/3.jpg" alt="" class="book-holder__img">
+
+        </div>
+        <div class="book-holder__info">
+            <h2 class="book-holder__info__header">کتاب بیشعوری</h2>
+            <p class="book-holder__info__p">ناشر :</p>
+            <p class="book-holder__info__p">رررزییبررزز</p>
+            <br>
+            <p class="book-holder__info__p">نوع کتاب :</p>
+            <p class="book-holder__info__p">تخیلی</p>
+            <br>
+            <p class="book-holder__info__p">نویسنده :</p>
+            <p class="book-holder__info__p">اکبر</p>
+            <br>
+            <p class="book-holder__info__p">کد :</p>
+            <p class="book-holder__info__p">03050</p>
+            <br>
+            <p class="book-holder__info__p">تعداد موجود در انبار :</p>
+            <p class="book-holder__info__p">3</p>
+            <br>
+            <p class="book-holder__info__p">توضیحات :</p>
+            <p class="book-holder__info__p">بذیبذبابیبلدلبدیبلد رذنیذیذئمذ مذیسمذیمذدن مدنز میدذذمسیدذیم دم دسیمذدسیم دس ددیسمدسم دسم دسی مکدنسیم ندس دس کتسد کسیتد مسیت سیمک تدسییمک دسمک دسی مکدس مکسد مسد مکس دسمک دسمک ندس مکنسد مکنس منسلد دسی مکدس مکسد مسد مکس دسمک دسمک ندس مکنسد مکنس
+                منسلد دسی مکدس مکسد مسد مکس دسمک دسمک ندس مکنسد مکنس منسلد دسی مکدس مکسد مسد مکس دسمک دسمک ندس مکنسد مکنس منسلد دسی مکدس مکسد مسد مکس دسمک دسمک ندس مکنسد مکنس منسلددسی مکدس مکسد مسد مکس دسمک دسمک ندس مکنسد مکنس منسلد دسی مکدس مکسد مسد
+                مکس دسمک دسمک ندس مکنسد مکنس منسلد منسد مسنل دسیمن دسلم دس</p>
+            <br>
+        </div>
+        <br>
+        <div class="book-holder__price">
+            <p class="book-holder__info__p">بهای هر روز اجاره :</p>
+            <p class="book-holder__info__p" id="price">15</p>
+            <p class="book-holder__info__p">هزار تومان</p>
+            <br>
+            <p class="book-holder__info__p">تعداد روز ها ی اجاره :</p>
+            <p class="book-holder__info__p" id="day">5</p>
+            <br>
+            <input type="range" class="book-holder__price__range" min="1" max="10" value="1" id="dayRange">
+            <br>
+            <p class="book-holder__info__p">هزینه ی اجاره :</p>
+            <p class="book-holder__info__p" id="cost">56</p>
+
+            <button type="submit" class="btn book-holder__price__btn">اجاره و پرداخت</button>
+        </div>
+        <div class="opnion">
+            <p class="book-holder__info__p">نظرات :</p>
+            <div class="opnion--1">
+                <p class="book-holder__info__p">نام کاربذ : </p>
+                <p class="book-holder__info__p">زورک یئبرنئیم بننرئس ئن منئمب نئ ئبمن نئئی ئیببم ئبب منسئ ممسنئرمثرئخئ</p>
+            </div>
+            <div class="opnion--1">
+                <p class="book-holder__info__p">نام کاربذ : </p>
+                <p class="book-holder__info__p">زورک یئبرنئیم بننرئس ئن منئمب نئ ئبمن نئئی ئیببم ئبب منسئ ممسنئرمثرئخئ</p>
+            </div>
+            <textarea type="text" maxlength="500" class="opnion__inp" placeholder="نظر خود را بنویسید"></textarea>
+            <button type="submit" class="btn opnion__btn">ثبت نظر</button>
+        </div>
+    </div>
+
+
+    <script src="../js/book.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آی بوک</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- logo -->
+        <nav>
+            <a href="admin.html" class="header__logo"><span class="welcome__logo--1"> آی</span><span class="welcome__logo--2">&nbsp;بوک </span></a>
+        </nav>
+        <!-- menu -->
+        <ul class="header__menu">
+            <li class="header__menu__item">
+                <a href="admin.html" class="header__menu__link">
+                    <span class="header__menu__link__design" data-menu="مدیریت">مدیریت</span>
+                </a>
+            </li>
+            <li class="header__menu__item">
+                <a href="adminBorrow.html" class="header__menu__link">
+                    <span class="header__menu__link__design" data-menu="امانات">امانات</span>
+                </a>
+            </li>
+        </ul>
+        <div class="header__button">
+            <a href="singIn.html" class="header__logOut btn">خروج</a>
+        </div>
+    </header>
+    <div class="main">
+
+        <div class="books borrow__holder">
+            <h3 class="books__header">مدیریت</h3>
+            <div class="books__holder admin__books__holder">
+                <!-- <div class="books__holder admin__books__holder"> -->
+                <div class="card">
+                    <img src="../img/1.jpg" class="card__img">
+                    <h3 class="card__header">کتاب بیشعوری</h3>
+                    <p class="card__p">ناشر :</p>
+                    <p class="card__p">رررزییبررزز</p>
+                    <br>
+                    <p class="card__p">نوع کتاب :</p>
+                    <p class="card__p">تخیلی</p>
+                    <br>
+                    <p class="card__p">نویسنده :</p>
+                    <p class="card__p">اکبر</p>
+                    <br>
+                    <p class="card__p">کد :</p>
+                    <p class="card__p">03050</p>
+                    <br>
+                    <!-- admin buttons -->
+                    <div class="btn__holder">
+                        <button class="btn admin__btn " id="btn-edit">ویرایش</button>
+                        <button class="btn admin__btn" id="btn-remove">حذف</button>
+                    </div>
+
+                </div>
+
+                <button class="btn admin__btn__add header__logOut" id="add">اضافه کردن</button>
+            </div>
+
+
+            <div class="" id="info">
+                <div class="bluring"></div>
+                <div class="admin__info__holder">
+                    <div class="times" id="timesAdd">&times;</div>
+                    <div class="infooo__holder">
+                        <p class="info_text">عنوان کتاب :</p>
+                        <input type="text" class="info_inp">
+                        <p class="info_text">نوع کتاب :</p>
+                        <input type="text" class="info_inp">
+                        <p class="info_text">ناشر :</p>
+                        <input type="text" class="info_inp">
+                        <p class="info_text">نویسنده :</p>
+                        <input type="text" class="info_inp">
+                        <p class="info_text">کد :</p>
+                        <input type="text" class="info_inp">
+                        <p class="info_text">تعداد موجود در انبار :</p>
+                        <input type="text" class="info_inp">
+                        <p class="info_text">بهای هر روز اجاره :</p>
+                        <input type="text" class="info_inp">
+                        <p class="info_text">توضیحات :</p>
+                        <textarea type="text" class="info_inp x"></textarea>
+                        <p class="info_text">عکس :</p>
+                        <input type="file" multiple>
+                        <button type="submit" class="btn admin__btn__add header__logOut" id="add-info">اضافه کردن</button>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <script src="../js/admin.js"></script>
+</body>
+
+</html>

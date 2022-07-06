@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    direction: rtl;
+}
+
+body {
+    font-family: $font-1;
+    background-color: $color-1;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    font-family: $font-1;
+}
+
+input {
+    border: none;
+    outline: none;
+    font-family: $font-1;
+}

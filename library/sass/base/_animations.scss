@@ -1,0 +1,22 @@
+@keyframes move {
+    0% {
+        opacity: 0;
+        transform: translateZ(-2000px);
+    }
+    25% {
+        opacity: 0.5;
+        transform: translateZ(-1000px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateZ(0px);
+    }
+    75% {
+        opacity: 0.5;
+        transform: translateZ(1000px);
+    }
+    100% {
+        transform: translateZ(2000px);
+        opacity: 0;
+    }
+}

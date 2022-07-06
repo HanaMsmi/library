@@ -1,0 +1,83 @@
+.book-holder {
+    display: flex;
+    width: 90%;
+    margin: 3rem 0rem;
+    margin-right: 5%;
+    background-color: darken($color-1, 2%);
+    box-shadow: 0px 0px 10px rgba(darken($color-1, 5%), 0.7);
+    padding: 2rem 2rem;
+    flex-wrap: wrap;
+    &__imager {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__img {
+        width: 300px;
+        height: 450px;
+    }
+    &__info {
+        margin-right: 3rem;
+        margin-top: 1rem;
+        &__header {
+            color: $color-text;
+            font-size: 2.5rem;
+        }
+        &__p {
+            display: inline-block;
+            color: $color-text;
+            margin-top: 1rem;
+            font-size: 1.9rem;
+        }
+    }
+    &__price {
+        margin-top: 2rem;
+        flex-shrink: 0;
+        flex-basis: 100%;
+        margin-right: 3rem;
+        &__range {
+            width: 100%;
+            margin-top: 1rem;
+        }
+        &__btn {
+            margin-top: 3rem;
+        }
+    }
+}
+
+.opnion {
+    margin-right: 3rem;
+    width: 100%;
+    &--1 {
+        background-color: lighten($color-1, 2%);
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+    &__btn {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+    &__inp {
+        display: flex;
+        width: 100%;
+        margin-top: 1rem;
+        min-height: 20rem;
+        border-radius: 10px;
+        padding-right: 1rem;
+        color: $color-text;
+        font-family: $font-1;
+        background-color: rgba(#fff, 0.07);
+        border: none;
+        outline: none;
+        font-size: 1.9rem;
+        &::placeholder {
+            font-family: $font-1;
+            margin-top: auto;
+            color: $color-place;
+        }
+        &:focus {
+            border: 1px solid rgba(#fff, 0.7);
+        }
+    }
+}

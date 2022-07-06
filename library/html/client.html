@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آی بوک</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- logo -->
+        <nav>
+            <a href="client.html" class="header__logo"><span class="welcome__logo--1"> آی</span><span class="welcome__logo--2">&nbsp;بوک </span></a>
+        </nav>
+        <!-- menu -->
+        <ul class="header__menu">
+            <li class="header__menu__item">
+                <a href="favClient.html" class="header__menu__link">
+                    <span class="header__menu__link__design" data-menu="لیست علاقه مندی">لیست علاقه مندی</span>
+                </a>
+            </li>
+            <li class="header__menu__item">
+                <a href="client.html" class="header__menu__link">
+                    <span class="header__menu__link__design" data-menu="کتاب خانه">کتاب خانه</span>
+                </a>
+            </li>
+            <li class="header__menu__item">
+                <a href="borrowClient.html" class="header__menu__link">
+                    <span class="header__menu__link__design" data-menu="امانات">امانات</span>
+                </a>
+            </li>
+        </ul>
+        <div class="header__button">
+            <a href="singIn.html" class="header__logOut btn">خروج</a>
+        </div>
+    </header>
+
+    <div class="main">
+
+        <div class="filter">
+            <p class="filter__p">فیلترها</p>
+            <ul class="filter__menu">
+                <li class="filter__menu__item">نوع کتاب
+                    <span class="filter__menu__item__arrow" id="kind">&gt;</span>
+                    <!-- sub filter -->
+                    <div class="filter__menu__item__sub">
+                        <ul class="filter__menu__item__sub__menu">
+                            <li class="filter__menu__item__sub__menu__item">
+                                <p id="filter-name">زززز</p>
+
+                                <input type="checkbox" id="checkbox1" class="checkbox">
+                                <label class="checkbox__label" for="checkbox1">
+                                <div class="tick_mark"></div>
+                                </label>
+                            </li>
+                            <li class="filter__menu__item__sub__menu__item">
+                                <p id="filter-name">طططط</p>
+
+                                <input type="checkbox" id="checkbox2" class="checkbox">
+                                <label class="checkbox__label" for="checkbox2">
+                                <div class="tick_mark"></div>
+                                </label>
+                            </li>
+                            <li class="filter__menu__item__sub__menu__item">
+                                <p id="filter-name">شششش</p>
+
+                                <input type="checkbox" id="checkbox3" class="checkbox">
+                                <label class="checkbox__label" for="checkbox3">
+                                <div class="tick_mark"></div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="filter__menu__item">نویسنده
+                    <span class="filter__menu__item__arrow" id="writer">&gt;</span>
+                    <!-- sub filter -->
+
+                    <div class="filter__menu__item__sub">
+                        <ul class="filter__menu__item__sub__menu">
+                            <li class="filter__menu__item__sub__menu__item">
+                                <p id="filter-name">یببب</p>
+
+                                <input type="checkbox" id="checkbox4" class="checkbox">
+                                <label class="checkbox__label" for="checkbox4">
+                                <div class="tick_mark"></div>
+                                </label>
+                            </li>
+                            <li class="filter__menu__item__sub__menu__item">
+                                <p id="filter-name">اااا</p>
+
+                                <input type="checkbox" id="checkbox5" class="checkbox">
+                                <label class="checkbox__label" for="checkbox5">
+                                <div class="tick_mark"></div>
+                                </label>
+                            </li>
+                            <li class="filter__menu__item__sub__menu__item">
+                                <p id="filter-name">مممم</p>
+
+                                <input type="checkbox" id="checkbox6" class="checkbox">
+                                <label class="checkbox__label" for="checkbox6">
+                                <div class="tick_mark"></div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li class="filter__menu__item">ناشر
+                    <span class="filter__menu__item__arrow" id="company">&gt;</span>
+                    <!-- sub filter -->
+
+                    <div class="filter__menu__item__sub">
+                        <ul class="filter__menu__item__sub__menu">
+                            <li class="filter__menu__item__sub__menu__item">
+                                <p id="filter-name">کککک</p>
+                                <input type="checkbox" id="checkbox7" class="checkbox">
+                                <label class="checkbox__label" for="checkbox7">
+                                <div class="tick_mark"></div>
+                                </label>
+                            </li>
+                            <li class="filter__menu__item__sub__menu__item">
+                                <p id="filter-name">ثثثث</p>
+                                <input type="checkbox" id="checkbox8" class="checkbox">
+                                <label class="checkbox__label" for="checkbox8">
+                                <div class="tick_mark"></div>
+                                </label>
+                            </li>
+                            <li class="filter__menu__item__sub__menu__item">
+                                <p id="filter-name">ععبللللطزرطعع</p>
+                                <input type="checkbox" id="checkbox9" class="checkbox">
+                                <label class="checkbox__label" for="checkbox9">
+                                <div class="tick_mark"></div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <button type="submit" class="btn filter__btn">اعمال فیلترها</button>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="books">
+            <h3 class="books__header">کتاب خانه</h3>
+            <div class="alert__holder">
+            </div>
+            <div class="books__holder">
+                <div class="card">
+                    <img src="../img/1.jpg" class="card__img">
+                    <h3 class="card__header">کتاب بیشعوری</h3>
+                    <p class="card__p">ناشر :</p>
+                    <p class="card__p">رررزییبررزز</p>
+                    <br>
+                    <p class="card__p">نوع کتاب :</p>
+                    <p class="card__p">تخیلی</p>
+                    <br>
+                    <p class="card__p">نویسنده :</p>
+                    <p class="card__p">اکبر</p>
+                    <br>
+                    <p class="card__p">کد :</p>
+                    <p class="card__p">03050</p>
+                    <br>
+                    <div class="btn-card-holder">
+                        <a href="bookClient.html" class="btn card__link">بیشتر</a>
+                        <button class="btn card__link" id="fav">مورد علاقه</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../js/client.js"></script>
+</body>
+
+</html>

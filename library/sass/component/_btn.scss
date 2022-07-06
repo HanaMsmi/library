@@ -1,0 +1,20 @@
+.btn {
+    display: block;
+    padding: 1.3rem 5rem;
+    background-color: transparent;
+    color: $color-text;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+    border: 1px solid $color-text;
+    border-radius: 5px;
+    transition: all .5s;
+    cursor: pointer;
+    background-image: linear-gradient(105deg, transparent 50%, $color-text 50%, $color-text 52.5%, transparent 52.5%, transparent 55%, $color-text 55%);
+    background-size: 270%;
+    &:hover {
+        background-position: 99%;
+        transform: scale(1.1);
+        color: $color-1;
+    }
+}

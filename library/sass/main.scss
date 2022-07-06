@@ -1,0 +1,62 @@
+// variables
+@import "base/variables";
+
+/* font */
+
+@import "layout/typography";
+
+/*base*/
+
+@import "base/base";
+
+/*animations*/
+
+@import "base/animations";
+
+/* btn component */
+
+@import "component/btn";
+
+/* range component */
+
+@import "component/range";
+
+/* checkbox component*/
+
+@import "component/card";
+
+/* checkbox component*/
+
+@import "component/checkbox";
+
+/* form component */
+
+@import "component/form";
+
+/* alert component */
+
+@import "component/alert";
+
+/* header */
+
+@import "layout/header";
+
+/*welcome page*/
+
+@import "page/welcome";
+
+/* sign up page*/
+
+@import "page/signUp&In";
+
+/* client page */
+
+@import "page/client";
+
+/* book page */
+
+@import "page/book";
+
+/* admin page */
+
+@import "page/admin";

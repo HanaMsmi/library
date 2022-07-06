@@ -1,0 +1,44 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    &__title {
+        text-transform: capitalize;
+        font-size: 6rem;
+        font-weight: bold;
+    }
+    &__p {
+        text-transform: capitalize;
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: $color-text;
+    }
+    &__user {
+        display: block;
+        color: $color-text;
+        background-color: rgba(#fff, 0.07);
+        border-radius: 5px;
+        width: 100%;
+        height: 3.5rem;
+        padding: 0rem 1rem;
+        font-size: 1.2rem;
+        &::placeholder {
+            color: $color-place;
+        }
+        &:focus {
+            border: 1px solid rgba(#fff, 0.7);
+        }
+        &__for {
+            align-self: flex-start;
+            margin-top: 4rem;
+            margin-bottom: .5rem;
+            color: $color-text;
+            text-transform: capitalize;
+            display: block;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+    }
+}

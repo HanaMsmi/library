@@ -1,0 +1,99 @@
+        .bgrc {
+            display: flex;
+            min-width: 100vw;
+            min-height: 100vh;
+            background-image: linear-gradient(135deg, $color-2, $color-1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .circle-1,
+        .circle-2 {
+            width: 20rem;
+            height: 20rem;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        .circle-1 {
+            background-image: linear-gradient(to right, $color-3, darken($color-3, 30%));
+            top: 50%;
+            left: 50%;
+            transform: translate(50%, 70%);
+        }
+        
+        .circle-2 {
+            background-image: linear-gradient(to right, $color-4, darken($color-4, 40%));
+            top: 50%;
+            left: 50%;
+            transform: translate(-150%, -170%);
+        }
+        
+        .circle-1--signUp {
+            transform: translate(50%, 80%);
+        }
+        
+        .circle-2--signUp {
+            transform: translate(-150%, -190%);
+        }
+        
+        .signIn {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 3rem;
+            align-items: center;
+            flex-basis: 40rem;
+            background-color: rgba(#fff, 0.3);
+            box-shadow: 0px 0px 40px rgba(darken($color-1, 4%), 0.3);
+            margin: auto;
+            border-radius: 10px;
+            border: 2px solid rgba(#fff, 0.1);
+            backdrop-filter: blur(10px);
+            position: relative;
+            &__btn {
+                width: 100%;
+                padding: 0.5rem 3rem;
+                font-size: 2rem;
+                margin-top: 4rem;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            &__p {
+                font-size: 1rem;
+                cursor: pointer;
+                color: $color-text;
+                transition: all .3s;
+                align-self: flex-end;
+                &:hover {
+                    color: lighten($color-2, 10%);
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+        .signUp {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 3rem;
+            align-items: center;
+            flex-basis: 40rem;
+            background-color: rgba(#fff, 0.3);
+            box-shadow: 0px 0px 40px rgba(darken($color-1, 4%), 0.3);
+            margin: auto;
+            border-radius: 10px;
+            border: 2px solid rgba(#fff, 0.1);
+            backdrop-filter: blur(10px);
+            position: relative;
+            &__fullname {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                &__first,
+                &__last {
+                    width: 45%;
+                }
+            }
+        }

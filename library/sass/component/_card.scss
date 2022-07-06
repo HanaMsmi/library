@@ -1,0 +1,35 @@
+.card {
+    flex-shrink: 0;
+    flex-basis: 250px;
+    border: 2px solid rgba(lighten($color-1, 20%), 0.3);
+    &__img {
+        width: 250px;
+        height: 350px;
+    }
+    &__header {
+        display: block;
+        text-align: center;
+        color: $color-text;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    &__p {
+        color: rgba($color-text, 0.6);
+        padding-right: .5rem;
+        display: inline;
+        font-size: 1.4rem;
+    }
+    &__link {
+        margin-bottom: 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        padding: 1rem 2.5rem;
+        &:hover {
+            background-position: 99%;
+            transform: translateX(0%) scale(1.1);
+            color: $color-1;
+        }
+    }
+}
